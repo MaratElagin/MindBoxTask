@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureArea", "FigureArea\FigureArea.csproj", "{89D1F32F-BC84-4361-9A92-14FA81ED8427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureArea.Tests", "FigureArea.Tests\FigureArea.Tests.csproj", "{EDF47942-7B33-4B4B-B81D-322CD86C7CCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89D1F32F-BC84-4361-9A92-14FA81ED8427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D1F32F-BC84-4361-9A92-14FA81ED8427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D1F32F-BC84-4361-9A92-14FA81ED8427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D1F32F-BC84-4361-9A92-14FA81ED8427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF47942-7B33-4B4B-B81D-322CD86C7CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF47942-7B33-4B4B-B81D-322CD86C7CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF47942-7B33-4B4B-B81D-322CD86C7CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF47942-7B33-4B4B-B81D-322CD86C7CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
