@@ -1,5 +1,5 @@
 using System;
-using FigureArea.Figures;
+using FigureArea.Domain.Figures;
 using Xunit;
 using FluentAssertions;
 
@@ -10,8 +10,8 @@ public class TriangleTests
     [Fact]
     public void Constructor_ShouldCreateTriangle_WhenValidSides()
     {
-        var actual = () => new Triangle(2, 3, 4);
-        actual.Should().NotThrow<ArgumentException>();
+        var act = () => new Triangle(2, 3, 4);
+        act.Should().NotThrow<ArgumentException>();
     }
 
     [Theory]
@@ -21,7 +21,8 @@ public class TriangleTests
     [InlineData(0, 0, 0)]
     public void Constructor_ShouldThrowException_WhenNotValidSides(double a, double b, double c)
     {
-        Assert.Throws<ArgumentException>(() => new Triangle(a, b, c));
+        var act = () => new Triangle(a, b, c);
+        act.Should().NotThrow<ArgumentException>();
     }
 
     [Theory]
@@ -32,7 +33,7 @@ public class TriangleTests
     public void IsRectangular_ShouldReturnTrue_WhenRectangularTriangle(double a, double b, double c)
     {
         var triangle = new Triangle(a, b, c);
-
+        
         var isRectangular = triangle.IsRectangular();
 
         Assert.True(isRectangular);

@@ -1,12 +1,12 @@
 ﻿using FigureArea.Infrastructure;
 
-namespace FigureArea.Figures;
+namespace FigureArea.Domain.Figures;
 
 public class Triangle : Figure
 {
-    public double A { get; }
-    public double B { get; }
-    public double C { get; }
+    double A { get; }
+    double B { get; }
+    double C { get; }
 
     public Triangle(double a, double b, double c)
     {
@@ -20,7 +20,7 @@ public class Triangle : Figure
     private void CheckForTriangleInequality(double a, double b, double c)
     {
         if (a + b <= c || a + c <= b || b + c <= a)
-            throw new ArgumentException(Exceptions.TriangleInequalityException);
+            throw new ArgumentException(ExceptionMessages.TriangleInequalityException);
     }
 
     /// <summary>

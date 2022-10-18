@@ -1,6 +1,7 @@
 using System;
-using FigureArea.Figures;
+using FigureArea.Domain.Figures;
 using Xunit;
+using FluentAssertions;
 
 namespace FigureArea.Tests;
 
@@ -9,13 +10,15 @@ public class CircleTests
     [Fact]
     public void Constructor_ShouldCreateCircle_WhenValidRadius()
     {
-        var circle = new Circle(5);
+        var act = () => new Circle(5);
+        act.Should().NotThrow<ArgumentException>();
     }
 
     [Fact]
     public void Constructor_ShouldThrowException_WhenNotValidRadius()
     {
-        Assert.Throws<ArgumentException>(() => new Circle(-5));
+        var act = () => new Circle(-5);
+        act.Should().Throw<ArgumentException>();
     }
 
     [Theory]

@@ -1,4 +1,4 @@
-﻿namespace FigureArea;
+﻿namespace FigureArea.Domain;
 
 public abstract class Figure
 {

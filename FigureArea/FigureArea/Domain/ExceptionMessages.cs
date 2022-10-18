@@ -1,6 +1,6 @@
-﻿namespace FigureArea;
+﻿namespace FigureArea.Domain;
 
-public static class Exceptions
+public static class ExceptionMessages
 {
     public const string NegativeRadiusException = "The radius of the circle must be positive number.";
 

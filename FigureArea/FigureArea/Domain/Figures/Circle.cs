@@ -1,18 +1,18 @@
 ﻿using FigureArea.Infrastructure;
 
-namespace FigureArea.Figures;
+namespace FigureArea.Domain.Figures;
 
 public class Circle : Figure
 {
-    private double _radius;
+    private readonly double _radius;
 
-    public double Radius
+    double Radius
     {
         get => _radius;
         init
         {
             if (value < 0)
-                throw new ArgumentException(Exceptions.NegativeRadiusException);
+                throw new ArgumentException(ExceptionMessages.NegativeRadiusException);
             _radius = value;
         }
     }
